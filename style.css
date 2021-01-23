@@ -45,4 +45,250 @@
 
   body {
       font-family: "Gilroy", sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      color: #242424;
   }
+
+  .page__header {
+    background-color: #E5E5E5;
+    background-image: url(./images/dog_1.png);
+    background-repeat: no-repeat;
+    background-position: top left 815px;
+  }
+
+.page__menu {
+  padding-top: 54px;
+  padding-right:290px;
+  }
+
+.top-menu__item:nth-child(odd) {
+  padding-right: 28px;
+}
+
+.top-menu__item:nth-child(2) {
+  padding-right: 190px;
+}
+
+.top-social__item:nth-child(1) {
+  padding-right: 28px;
+}
+
+  .top-wrapper {
+    display: flex;
+  }
+
+  .top-social {
+    display: flex;
+    padding-top: 39px;
+  }
+
+  .top-menu__item {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .top-menu__link {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 19px;
+    color: #242424;
+  }
+
+.page__header {
+  width: 1146px;
+  padding: 0px 387px 121px 387px;
+}
+
+
+
+.promo-container{
+  padding-top: 69px;
+}
+
+.promo-container__title {
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 87px;
+}
+
+.promo-container__description {
+  color: #6B6B6B;
+  font-weight: 300;
+  margin-top: -3px;
+}
+
+.promo-container__goal {
+  color: #474747;
+  line-height: 140%;
+  padding-top: 12px;
+  font-weight: 600;
+  width: 659px;
+}
+
+.promo-container__details {
+  color: #C78100;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding-top: 44px;
+  width: 428px;
+}
+
+.promo-container__button {
+  margin-top: 44px;
+  margin-bottom: 151px;
+}
+
+.button {
+  background: #FBC832;
+  border-radius: 58px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 33px;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background: #FFDF86;
+  box-shadow: 0px 2px 4px #CCCCCC;
+}
+
+.button:active {
+  background: #FFBB0C;
+  background-blend-mode: multiply;  
+}
+
+.header-image_positioned {
+  position: absolute;
+  top: 470px;
+  left: 884px;
+}
+
+.header-image_transparent1 {
+  position: absolute;
+  top: 374px;
+  left: 277px;
+  opacity: 0.5;
+}
+
+.header-image_transparent2 {
+  position: absolute;
+  top: 566px;
+  left: 275px;
+  opacity: 0.6;  
+}
+
+.header-image_transparent3 {
+  position: absolute;
+  top: 671px;
+  left: 573px;
+  opacity: 0.5;  
+}
+
+.help-description {
+  display: flex;
+  padding: 54px 507px 75px 0px;
+}
+
+.wrapper__title {
+  color: #C78100;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  width: 466px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.wrapper__text {
+  width: 466px;
+  margin-bottom: 23px;
+  line-height: 22px;
+}
+
+  .help-description__images {
+    position: relative;
+    width: 853px;
+    height: 521px;
+}
+
+.pets__image_rectangle {
+  position: absolute;
+}
+
+.pets__image_circle {
+  position: absolute;
+  left: 332px;
+}
+
+.pets__image_pet1 {
+  position: absolute;
+  left: 366px;
+  top: 30px;
+}
+
+.pets__image_sm-circle {
+  position: absolute;
+  left: 638px;
+  top: 295px;
+}
+
+.pets__image_pet2 {
+  position: absolute;
+  left: 646px;
+  top: 303px;
+}
+
+.help-description__container {
+  padding-left: 946px;
+  padding-top: 70px;
+}
+
+.help-types {
+  background-color: #E5E5E5;
+  width: 1920px;
+}
+
+.help-types__title {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 77px;
+  padding-bottom: 45px;
+}
+
+.help-variants {
+  display: flex;
+  width: 1130px;
+  justify-content: space-between;
+  padding-left: 388px;
+}
+
+.help-variants__item {
+  width: 166px;
+  text-align: center;
+}
+
+.help-variants__text {
+  text-align: center;
+  padding-top: 21px;
+  line-height: 22px;
+}
+
+.separator__line {
+  background-color: #EEBF3A;
+  height: 1px;
+  width: 807px;
+  border: transparent;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
