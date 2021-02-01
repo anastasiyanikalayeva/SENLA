@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Modal windows</title>
+</head>
+<body>
+    <div class="modal-home">
+    <form class="form-home" action="#" method="post">
+        
+        <div class="form-home__header">
+        <h3 class="form-title">Забрать домой</h3>
+        <img src="./images/close.svg" alt="Крестик">
+        </div>
+
+        <p class="form-home__subtitle">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+        
+        <label class="label" for="fname">Фамилия и имя</label><br>
+        <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+        <br>
+
+        <!--<p>Введите полное имя или фамилию</p>-->        
+        <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+        <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+        <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+
+        <label class="label" for="fcomments">Замечания</label><br>
+        <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Введите информацию, которая будет полезна нам" maxlength="500"></textarea>
+        
+        <div class="form-contacts">
+            <p>Если у вас есть вопросы, можете позвонить нам:</p>
+            <ul class="form-contacts__list contacts-list">
+            <li><a class="form-contacts__link" href="tel:+375336237879">+375 (33) 6237879</a>, Лена</li>
+            <li><a class="form-contacts__link" href="tel:+375297877791">+375 (29) 7877791</a>, Ольга</li>
+            <li><a class="form-contacts__link" href="tel:+375295837015">+375 (29) 5837015</a>, Рита</li>
+            </ul>
+        </div>
+
+        <div class="form-buttons">
+            <button class="button" type="submit" disabled>Отправить</button>
+            <button class="button_colorless" type="button">Отмена</button>
+        </div>
+    </form>
+    </div>
+
+    <div class="modal-temporary">
+    <form class="form-temporary" action="#" method="post">
+
+        <div class="form-temporary__header">
+        <h3 class="form-title">Забрать на передержку</h3>
+        <img src="./images/close.svg" alt="Крестик">
+        </div>
+
+        <p class="form-temporary__subtitle">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца на передержку.</p>
+        
+        <label class="label" for="fname">Фамилия и имя</label><br>
+        <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+        <br>
+
+        <!--<p>Введите полное имя или фамилию</p>-->        
+        <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+        <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+        <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+
+        <label class="label" for="fcomments">Замечания</label><br>
+        <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Опишите, на какой срок вы смогли бы взять питомца на передержку" maxlength="500"></textarea>
+        
+        <div class="form-contacts">
+            <p>Если у вас есть вопросы, можете позвонить нам:</p>
+            <ul class="form-contacts__list contacts-list">
+            <li><a class="form-contacts__link" href="tel:+375336237879">+375 (33) 6237879</a>, Лена</li>
+            <li><a class="form-contacts__link" href="tel:+375297877791">+375 (29) 7877791</a>, Ольга</li>
+            <li><a class="form-contacts__link" href="tel:+375295837015">+375 (29) 5837015</a>, Рита</li>
+            </ul>
+        </div>
+        
+        <p class="form-temporary__additional">Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.</p>
+        <p class="form-temporary__additional_gratitude">Спасибо за помощь!</p>
+        
+        <div class="form-buttons">
+            <button class="button" type="submit" disabled>Отправить</button>
+            <button class="button_colorless" type="button">Отмена</button>
+        </div>
+
+    </form>
+    </div>
+
+    <div class="modal-car">
+    <form class="form-car" action="#">
+
+        <div class="form-car__header">
+        <h3 class="form-title">Автопомощь</h3>
+        <img src="./images/close.svg" alt="Крестик">
+        </div>
+
+        <h4 class="form__request">Заявка</h4>
+        <p class="form-car__subtitle">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.</p>
+
+        <label class="label" for="fname">Фамилия и имя</label><br>
+        <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+        <br>
+
+        <!--<p>Введите полное имя или фамилию</p>-->        
+        <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+        <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+        <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+
+        <label class="label" for="fcomments">Замечания</label><br>
+        <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Опишите, как вы сможете нам помочь и удобное время для вас" maxlength="500"></textarea>
+        
+        
+        <div class="form-buttons car__form-buttons">
+            <button class="button" type="submit" disabled>Отправить</button>
+            <button class="button_colorless" type="button">Отмена</button>
+        </div>
+
+    </form>
+</div>
+
+    <div class="modal-volunteering">
+    <form class="form-volunteering" action="#">
+
+        <div class="form-volunteering__header">
+        <h3 class="form-title">Волонтерство</h3>
+        <img src="./images/close.svg" alt="Крестик">
+        </div>
+
+        <h4 class="form__request">Заявка</h4>
+        <p class="form-volunteering__subtitle">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь, мы позвоним вам.</p>
+        
+        <label class="label" for="fname">Фамилия и имя</label><br>
+        <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+        <br>
+
+        <!--<p>Введите полное имя или фамилию</p>-->        
+        <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+        <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+        <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+ 
+        <div class="form_radio">
+            <label class="container">
+                <input type="radio" checked="checked" name="radio"><span class="radio__text">Хочу помогать на постоянной основе (расписание можно подобрать так, как будет вам удобно)</span>
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input type="radio" name="radio"><span class="radio__text">Готов помогать иногда. Хочу выбрать удобное для меня время</span>
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <label class="label" for="fcomments">Замечания</label><br>
+        <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Опишите, как вы сможете нам помочь и удобное время для вас" maxlength="500"></textarea>
+        
+
+        <div class="form-buttons car__form-buttons">
+            <button class="button" type="submit" disabled>Отправить</button>
+            <button class="button_colorless" type="button">Отмена</button>
+        </div>
+
+    </form>
+</div>  
+
+<div class="modal-where">
+        <div class="modal-where__wrapper">
+        <div class="modal-where__header">
+        <h3 class="form-title">Кому и куда передать?</h3>
+        <img src="./images/close.svg" alt="Крестик">
+        </div>
+
+        <p class="modal-where__subtitle">Чтобы передать купленные вещи, свяжитесь с нашими волонтерами. Вы сможете договориться о времени и месте встречи.</p>
+        <p class="modal-where__text">Если доставить сами не сможете - волонтеры вам помогут в доставке.</p>
+
+        <div class="modal-where__form-contacts">
+            <ul class="modal-where__list contacts-list">
+            <li><a class="modal-where__link" href="tel:+375336237879">+375 (33) 6237879</a> Лена</li>
+            <li><a class="modal-where__link" href="tel:+375297877791">+375 (29) 7877791</a> Ольга</li>
+            <li><a class="modal-where__link" href="tel:+375295837015">+375 (29) 5837015</a> Рита</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
