@@ -61,6 +61,10 @@
     padding: 0px 387px 121px 387px;
   }
 
+  .page__menu_icon {
+    display: none;
+  }
+
 .page__menu {
   padding-top: 54px;
   padding-right:290px;
