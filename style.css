@@ -409,6 +409,7 @@
 }
 
 .animal-card__button_highlighted {
+  font-family: Gilroy;
   position: absolute;
   bottom: 78px;
   left: 80px;
@@ -428,6 +429,7 @@
   left: 36px;
   outline: none;
   color: #242424;
+  font-family: Gilroy;
 }
 
 .animal-card__button:hover {
@@ -496,6 +498,7 @@
 }
 
 .finance__title {
+  font-family: Gilroy;
   font-weight: 600;
   font-size: 28px;
   text-align: center;
