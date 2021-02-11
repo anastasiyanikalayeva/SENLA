@@ -13,7 +13,19 @@
     <header class="page__header">
         <div class="top-wrapper">
        <nav class="page__menu">
-           <a class="page__menu_icon"><img src="images/burger.png" alt="Меню"></a>
+
+        <p class="mobile-hamburger"><a href="#" class="page__menu_icon"><img src="images/burger.png"></a></p>
+            <div class="menu-mobile">
+                <ul class="menu-mobile-list">
+                    <li class="menu-mobile-list__item"><a class="menu-mobile-list__link" href="#help-types">Как помочь</a></li>
+                    <li class="menu-mobile-list__item"><a class="menu-mobile-list__link" href="#our-pets">Подопечные животные</a></li>             
+                
+                    <li class="menu-mobile-list__item"><a class="menu-mobile-list__link" href="#footer">О нас</a></li>           
+                    <li class="menu-mobile-list__item"><a class="menu-mobile-list__link" href="#footer__subtitle">Контакты</a></li>  
+                </ul>  
+                <p class="close-menu">Закрыть</p>
+            </div>
+
             <ul class="top-menu">
                 <li class="top-menu__item"><a class="top-menu__link" href="#help-types">Как помочь</a></li>
                 <li class="top-menu__item"><a class="top-menu__link" href="#our-pets">Подопечные животные</a></li>
@@ -27,6 +39,7 @@
                 </ul>
             </div>
             
+            <div class="page-overlay"></div>
 
         <div class="promo-container">
             <h1 class="promo-container__title">Спаси жизнь</h1>
@@ -99,21 +112,21 @@
                 <button class="animal-card__button_highlighted button">Забрать домой</button>
                 <button class="animal-card__button">Забрать на передержку</button>
             </div>
-            <div class="animal-card">
+            <div class="animal-card animal-card-main-page">
                 <img class="animal-card__image" src="./images/image_153.png" alt="Кошка">
                 <p class="animal-card__name">Саки</p>
                 <p class="animal-card__description_gray">Мальчик, 7 месяцев </p> <p class="animal-card__description"> Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
                 <button class="animal-card__button_highlighted button">Забрать домой</button>
                 <button class="animal-card__button">Забрать на передержку</button>
             </div>
-            <div class="animal-card">
+            <div class="animal-card animal-card-main-page">
                 <img class="animal-card__image" src="./images/image_154.png" alt="Собака">
                 <p class="animal-card__name">Моника</p>
                 <p class="animal-card__description_gray">Девочка, 4 месяца </p> <p class="animal-card__description"> Девочке 4 месяца жила в ужасных условиях, бывшая хозяйка могла исчезнуть на двое суток закрыв её одну в комнате без еды, ей нельзя там больше оставаться. Мила очень ласковая, забавная, в еде не привередлива.</p>
                 <button class="animal-card__button_highlighted button">Забрать домой</button>
                 <button class="animal-card__button">Забрать на передержку</button>
             </div>
-            <div class="animal-card">
+            <div class="animal-card animal-card-main-page">
                 <img class="animal-card__image" src="./images/image_155.png" alt="Собака">
                 <p class="animal-card__name">Андреантино</p>
                 <p class="animal-card__description_gray">Мальчик, 7 месяцев </p> <p class="animal-card__description"> Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
@@ -220,7 +233,7 @@
 
         <div class="separator separator-volunteering" id="volunteering">
             <hr class="separator__line">
-            <img class="separator__image" src="./images/Group_12.png" alt="Иконка">
+            <img class="separator__image separator__image_volunteering" src="./images/Group_12.png" alt="Иконка">
             <hr class="separator__line">
         </div>
         <div class="volunteering" >
@@ -352,26 +365,63 @@
         <p class="footer__privacy">© 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
 
     </footer>
+
     <script>
-        var linkShow = document.querySelector(".show-more");
-        var moreNews = document.querySelector(".additional-news");
-        var linkHide = document.querySelector(".show-less");
-        
-        linkShow.addEventListener("click", function(event) {
+
+var linkShow = document.querySelector(".show-more");
+var moreNews = document.querySelector(".additional-news");
+var linkHide = document.querySelector(".show-less");
+
+linkShow.addEventListener("click", function(event) {
+    event.preventDefault();
+    moreNews.classList.add("more-news");
+    linkShow.classList.add("no-display-linkShow");
+    linkHide.classList.add("display-linkHide");
+}
+)
+
+linkHide.addEventListener("click", function(event) {
+        event.preventDefault();
+        moreNews.classList.remove("more-news");
+        linkHide.classList.remove("display-linkHide");
+        linkShow.classList.remove("no-display-linkShow");
+    }
+)
+</script>
+<script>
+    
+    var menuIcon = document.querySelector(".page__menu_icon");
+    var menuMobile = document.querySelector(".menu-mobile");    
+    var hamburger = document.querySelector(".mobile-hamburger");
+    var pageOverlay = document.querySelector(".page-overlay");
+    var closeLink = document.querySelector(".close-menu");
+   
+    
+
+   
+    menuIcon.addEventListener("click", function(event) {
+        event.preventDefault();
+        menuMobile.classList.add("menu-mobile-display");
+        menuIcon.classList.add("menu-displayed");
+        hamburger.classList.add("hamburger-wrapper");
+        pageOverlay.classList.add("overlay");
+        closeLink.classList.add("close-menu-show");
+       
+    }
+    )
+   
+    closeLink.addEventListener("click", function(event) {
             event.preventDefault();
-            moreNews.classList.add("more-news");
-            linkShow.classList.add("no-display-linkShow");
-            linkHide.classList.add("display-linkHide");
-        }
-        )
-        
-        linkHide.addEventListener("click", function(event) {
-                event.preventDefault();
-                moreNews.classList.remove("more-news");
-                linkHide.classList.remove("display-linkHide");
-                linkShow.classList.remove("no-display-linkShow");
-            }
-        )
-        </script>
+            menuIcon.classList.remove("menu-displayed");
+            menuMobile.classList.remove("menu-mobile-display");
+            hamburger.classList.remove("hamburger-wrapper");
+            pageOverlay.classList.remove("overlay");
+            closeLink.classList.remove("close-menu-show");
+       
+    }
+    )
+    
+</script>
+
 </body>
 </html>

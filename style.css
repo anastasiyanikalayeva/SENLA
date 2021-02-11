@@ -136,7 +136,7 @@
   padding-top: 44px;
   width: 428px;
   position: relative;
-  z-index: 11;
+  z-index: 5;
 }
 
 .button {
@@ -1241,14 +1241,16 @@ form input:disabled::placeholder {
   position: relative;
 }
 
+.pets-header__link-wrapper {
+  height: 40px;
+}
+
 .pets-header__link {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #6B6B6B;
-  position: relative;
-  left: 32px;
-  top: 2px;
+  text-decoration: none;
 }
 
 .pets-header__title {
@@ -1257,9 +1259,10 @@ form input:disabled::placeholder {
   color: #242424;
 }
 
-.pets-header__link-wrapper::before {
-content: url(./images/Frame_72.svg);
-position: absolute;
+.pets-header__image {
+  position: relative;
+  top: 6px;
+  margin-right: 8px;
 }
 
 .pets-header__label {
@@ -1267,6 +1270,7 @@ position: absolute;
   left: -70px;
   top: 10px;
   font-size: 16px;
+  line-height: 140%;
 }
 
 #wars {
@@ -1286,4 +1290,104 @@ position: absolute;
   border: 1px solid #FFC41E;
   color: #000000;
   opacity: 1;
+}
+
+/* Menu */
+.page__menu_icon {
+  display: none;
+  
+}
+
+.menu-displayed {
+  position: relative;
+  top: 24px;
+  left: 30px;
+}
+
+.menu-mobile {
+  display: none;
+  
+}
+
+.menu-mobile-display {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 360px;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+.menu-mobile-list {
+  width: 226px;
+  height: 303px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+}
+
+.menu-mobile-list__item {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EEBF3A;
+}
+
+.menu-mobile-list__item:last-child {
+  border: none;
+}
+
+.menu-mobile-list__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.hamburger-wrapper {
+  width: 360px;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #FFC41E;
+}
+
+.overlay {
+  display: block;
+  background-color: #000000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  width: 360px;
+  height: 100vh;
+  z-index: 5;
+
+}
+
+.close-menu {
+  display: none;
+}
+
+.close-menu-show {
+  display: block;
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 129px;
+  margin-top: 16px;
+  
+}
+
+.close-menu-show::after {
+  content: url('images/icon-menu.png');
+  transform: rotate(-45deg);
+  margin-left: 8px;
 }

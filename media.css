@@ -124,7 +124,14 @@
         width: 1366px;
         background-image: url("./images/36164\(sm1\).png");
       }
+
+      .outer-wrapper {
+        width: 1366px;
+      }
       
+      .pets-header {
+        padding-left: 110px;
+      }
   }
 
 
@@ -178,6 +185,8 @@
   .promo-container__goal {
     width: 158px;
     padding-top: 20px;
+    position: relative;
+    z-index: 5;
   }
 
   .header-image_positioned {
@@ -359,6 +368,10 @@
       width: 54px;
     }
 
+    .separator__image_volunteering {
+      width: 30px;
+    }
+
     .options {
       display: flex;
       flex-direction: column;
@@ -435,7 +448,7 @@
       font-size: 18px;
     }
 
-    .animal-card:nth-child(4), .animal-card:nth-child(5), .animal-card:nth-child(6) {
+    .animal-card-main-page {
       display: none;
     }
 
@@ -838,6 +851,42 @@
 
   .volunteering__form-buttons {
     padding-top: 0;
+  }
+
+  .wards__wrapper {
+    height: 7686px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+  
+  }
+
+  .outer-wrapper {
+    width: 360px;
+  }
+
+  .pets-header {
+    width: 300px;
+    height: 88px;
+    padding-left: 30px;
+    padding-top: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .pets-header__title {
+    font-size: 20px;
+    margin-left: 28px;
+    margin-bottom: 24px;
+  }
+  .pets-header__link {
+    display: none;
+  }
+  .pets-header__select-block {
+    margin-left: 100px;
+  }
+
+  .pets-header__image {
+    top: -4px;
   }
 
   }
