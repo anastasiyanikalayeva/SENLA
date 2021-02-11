@@ -1,4 +1,4 @@
-@media screen and (max-width: 1366px) and (min-width: 1270px){
+@media screen and (max-width: 1366px){
     .page__header {
         background-position: top left 538px;
         padding: 0px 110px 121px 110px;
@@ -128,7 +128,7 @@
   }
 
 
-  @media screen and (max-width: 1269px){
+  @media screen and (max-width: 639px){
     
     body {
       font-size: 14px;
@@ -470,7 +470,6 @@
       width: 32px;
     }
 
-
     .social-links__item {
       padding-right: 0px;
     }
@@ -723,6 +722,122 @@
       width: 300px;
     }
 
+    /* Forms */
 
+    .modal-home {
+      width: 360px;
+      height: 728px;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+   
+    .form-title {
+      font-size: 22px;
+    }
+
+     form textarea, .input {
+        width: 300px;
+    }
+
+    .form-buttons {
+        width: 168px;
+        height: 80px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .form-button {
+        font-size: 18px;
+        padding: 0px 16px;
+        line-height: 30px;
+    }
+
+    .button_colorless {
+      width: 143px;
+      font-size: 18px;
+      padding: 0px 13px;
+      line-height: 30px;
+      align-self: center;
+    }
+
+    .form-contacts {
+        padding-bottom: 24px;
+    }
+
+    .modal-temporary {
+      width: 360px;
+      height: 856px;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+    .modal-car {
+      width: 360px;
+      height: 661px;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+    .car__form-buttons, .volunteering__form-buttons {
+        width: 234px;
+    }
+
+    .car__form-buttons, .volunteering__form-buttons {
+        margin-top: 24px;
+    }
+
+    .modal-volunteering {
+      width: 360px;
+      height: 778px;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+    .form-volunteering input[type="text"],
+    .form-volunteering input[type="tel"],
+    .form-volunteering textarea  {
+      width: 300px;
+      
+  }
+
+  .form_radio {
+      width: 300px;
+  }
+
+  .modal-where {
+      width: 360px;
+      height: 382px;
+      padding: 30px;
+      margin: 0 auto;
+  }
+
+  .modal-where__subtitle, .modal-where__text {
+      width: 300px;
+  }
+
+  .form-home__subtitle, .form-temporary__subtitle, .form-car__subtitle, .form-volunteering__subtitle {
+    width: 300px;
+  } 
+
+  .container {
+    width: 300px;
+  }
+
+  .car__form-buttons {
+    padding-top: 0;
+  }
+
+  .volunteering__form-buttons {
+    padding-top: 0;
+  }
 
   }

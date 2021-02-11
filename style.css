@@ -747,7 +747,7 @@ b {
 }
 
 .contacts-list {
-  line-height: 185%;
+  line-height: 140%;
 }
 
 .contacts-list__item {
@@ -874,10 +874,17 @@ b {
 
 /* Forms */
 
-.form-home__header, .form-temporary__header, .form-car__header, .form-volunteering__header, .modal-where__header {
+.form__header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   border-bottom: 1px solid #EEBF3A;
+  height: 44px;
+}
+
+.modal-home, .modal-temporary, .modal-car, .modal-volunteering, .modal-where {
+  box-sizing: border-box;
+  padding: 30px 40px;
 }
 
 .modal-home {
@@ -915,9 +922,6 @@ b {
   border-radius: 5px;
 }
 
-.form-home, .form-temporary, .form-car, .form-volunteering, .modal-where__wrapper {
-  padding: 30px 40px;
-}
 
 .form-title {
   font-weight: 600;
@@ -934,7 +938,7 @@ b {
   padding-top: 16px;
   padding-bottom: 32px;
   width: 402px;
-}
+} 
 
 .modal-where__subtitle {
   font-size: 16px;
@@ -1200,7 +1204,6 @@ form input:disabled::placeholder {
 .modal-where__form-contacts {
   font-size: 14px;
   line-height: 140%;
-  padding-bottom: 25px;
 }
 
 .modal-where__link {
