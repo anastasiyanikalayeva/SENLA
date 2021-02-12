@@ -171,7 +171,7 @@
   margin-top: 44px;
   margin-bottom: 151px;
   position: relative;
-  z-index: 10;
+  z-index: 5;
   text-decoration: none;
   display: block;
   width: 117px;
@@ -906,6 +906,8 @@ b {
   height: 611px;
   box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
   border-radius: 5px;
+  display: none;
+  background-color: white;
 }
 
 .modal-volunteering {
@@ -913,6 +915,8 @@ b {
   height: 700px;
   box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
   border-radius: 5px;
+  display: none;
+  background-color: white;
 }
 
 .modal-where {
@@ -920,6 +924,8 @@ b {
   height: 363px;
   box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
   border-radius: 5px;
+  display: none;
+  background-color: white;
 }
 
 
@@ -1390,4 +1396,51 @@ form input:disabled::placeholder {
   content: url('images/icon-menu.png');
   transform: rotate(-45deg);
   margin-left: 8px;
+}
+
+.where-show {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  margin-left: -100px;
+  z-index: 10;
+}
+
+.car-show {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  margin-left: -100px;
+  z-index: 10;
+}
+
+.volunteering-show {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  margin-left: -100px;
+  z-index: 10;
+}
+
+.modal-wrapper {
+  position: relative;
+}
+
+.modal-overlay {
+  display: none;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.modal-overlay-show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
 }

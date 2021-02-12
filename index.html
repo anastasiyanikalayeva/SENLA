@@ -217,7 +217,31 @@
             </ul>
         </div>
 
+        <div class="modal-wrapper">
+
         <a class="support__link" href="">Кому и куда передать?</a>
+
+        <div class="modal-where">
+            <div class="modal-where__wrapper">
+            <div class="form__header">
+            <h3 class="form-title">Кому и куда передать?</h3>
+            <img src="./images/close.svg" class="where-close" alt="Крестик">
+            </div>
+        
+            <p class="modal-where__subtitle">Чтобы передать купленные вещи, свяжитесь с нашими волонтерами. Вы сможете договориться о времени и месте встречи.</p>
+            <p class="modal-where__text">Если доставить сами не сможете - волонтеры вам помогут в доставке.</p>
+        
+            <div class="modal-where__form-contacts">
+                <ul class="modal-where__list contacts-list">
+                <li><a class="modal-where__link" href="tel:+375336237879">+375 (33) 6237879</a> Лена</li>
+                <li><a class="modal-where__link" href="tel:+375297877791">+375 (29) 7877791</a> Ольга</li>
+                <li><a class="modal-where__link" href="tel:+375295837015">+375 (29) 5837015</a> Рита</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal-overlay"></div>
 
         <div class="separator separator-auto" id="support-type">
             <hr class="separator__line">
@@ -225,11 +249,49 @@
             <hr class="separator__line">
         </div>
 
+        <div class="modal-wrapper">
+            <div class="modal-car">
+                <form class="form-car" action="#">
+            
+                    <div class="form__header">
+                    <h3 class="form-title">Автопомощь</h3>
+                    <img src="./images/close.svg" class="car-close" alt="Крестик">
+                    </div>
+            
+                    <h4 class="form__request">Заявка</h4>
+                    <p class="form-car__subtitle">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.</p>
+            
+                    <label class="label" for="fname">Фамилия и имя</label><br>
+                    <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+                    <br>
+            
+                    <!--<p>Введите полное имя или фамилию</p>-->        
+                    <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+                    <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+            
+                    <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+            
+                    <label class="label" for="fcomments">Замечания</label><br>
+                    <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Опишите, как вы сможете нам помочь и удобное время для вас" maxlength="500"></textarea>
+                    
+                    
+                    <div class="form-buttons car__form-buttons">
+                        <button class="button form-button" type="submit" disabled>Отправить</button>
+                        <button class="button_colorless" type="button">Отмена</button>
+                    </div>
+            
+                </form>
+            </div>
+
+        </div>
+
         <div class="support-type" >
             <h2 class="support-type__title support-type__title_auto">Автопомощь</h2>
             <p class="support-type__text support-type__text_auto">Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.</p>
-            <button class="support-type__button button">Оставить заявку</button>
+            <button class="support-type__button button support-type__button_car">Оставить заявку</button>
         </div>
+
+       
 
         <div class="separator separator-volunteering" id="volunteering">
             <hr class="separator__line">
@@ -237,6 +299,54 @@
             <hr class="separator__line">
         </div>
         <div class="volunteering" >
+
+            <div class="modal-wrapper">
+
+                <div class="modal-volunteering">
+                    <form class="form-volunteering" action="#">
+                
+                        <div class="form__header">
+                        <h3 class="form-title">Волонтерство</h3>
+                        <img src="./images/close.svg" class="volunteering-close" alt="Крестик">
+                        </div>
+                
+                        <h4 class="form__request">Заявка</h4>
+                        <p class="form-volunteering__subtitle">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь, мы позвоним вам.</p>
+                        
+                        <label class="label" for="fname">Фамилия и имя</label><br>
+                        <input class="input" type="text" id="fname" name="name" placeholder="Введите ваше имя и фамилию" minlength="2" maxlength="56"> 
+                        <br>
+                
+                        <!--<p>Введите полное имя или фамилию</p>-->        
+                        <label class="label" for="fphone">Номер телефона (только белорусский номер)</label>
+                        <input class="input" type="tel" id="fphone" name="phone" placeholder="Введите ваш номер телефона" required>
+                
+                        <p class='form-home__required_text'>Обязательное поле для заполнения</p>
+                 
+                        <div class="form_radio">
+                            <label class="container">
+                                <input type="radio" checked="checked" name="radio"><span class="radio__text">Хочу помогать на постоянной основе (расписание можно подобрать так, как будет вам удобно)</span>
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">
+                                <input type="radio" name="radio"><span class="radio__text">Готов помогать иногда. Хочу выбрать удобное для меня время</span>
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                
+                        <label class="label" for="fcomments">Замечания</label><br>
+                        <textarea class="input input_extended" name="comments" id="fcomments" placeholder="Опишите, как вы сможете нам помочь и удобное время для вас" maxlength="500"></textarea>
+                        
+                
+                        <div class="form-buttons volunteering__form-buttons">
+                            <button class="button form-button" type="submit" disabled>Отправить</button>
+                            <button class="button_colorless" type="button">Отмена</button>
+                        </div>
+                
+                    </form>
+                </div>
+    
+            </div>
 
             <div class="volunteering__images pets">
                 <div class="pets__image_rectangle"></div>
@@ -248,7 +358,7 @@
                     <h2 class="support-type__title">Волонтерство</h2>
                     <p class="support-type__text">Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!
                         Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p>
-                        <button class="support-type__button support-type__button_volunteering button">Оставить заявку</button>
+                        <button class="support-type__button support-type__button_volunteering button button_volunteering">Оставить заявку</button>
             </div>
         </div>
 
@@ -422,6 +532,77 @@ linkHide.addEventListener("click", function(event) {
     )
     
 </script>
+
+<script>
+    var modalLink = document.querySelector(".support__link");
+    var whereShow = document.querySelector(".modal-where");    
+    var modalOverlay = document.querySelector(".modal-overlay");
+    var whereClose = document.querySelector(".where-close");
+   
+    
+    modalLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        whereShow.classList.add("where-show");
+        modalOverlay.classList.add("modal-overlay-show");
+        
+    }
+    )
+    
+    whereClose.addEventListener("click", function(event) {
+            event.preventDefault();
+            whereShow.classList.remove("where-show");
+            modalOverlay.classList.remove("modal-overlay-show");
+    }
+    )
+    </script>
+
+<script>
+    var modalCarLink = document.querySelector(".support-type__button_car");
+    var carShow = document.querySelector(".modal-car");    
+    var modalOverlay = document.querySelector(".modal-overlay");
+    var carClose = document.querySelector(".car-close");
+   
+    
+    modalCarLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        carShow.classList.add("car-show");
+        modalOverlay.classList.add("modal-overlay-show");
+        
+    }
+    )
+    
+    carClose.addEventListener("click", function(event) {
+            event.preventDefault();
+            carShow.classList.remove("car-show");
+            modalOverlay.classList.remove("modal-overlay-show");
+    }
+    )
+    </script>
+
+<script>
+    var modalVolunteeringLink = document.querySelector(".button_volunteering");
+    var volunteeringShow = document.querySelector(".modal-volunteering");    
+    var modalOverlay = document.querySelector(".modal-overlay");
+    var volunteeringClose = document.querySelector(".volunteering-close");
+   
+    
+    modalVolunteeringLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        volunteeringShow.classList.add("volunteering-show");
+        modalOverlay.classList.add("modal-overlay-show");
+        
+    }
+    )
+    
+    volunteeringClose.addEventListener("click", function(event) {
+            event.preventDefault();
+            volunteeringShow.classList.remove("volunteering-show");
+            modalOverlay.classList.remove("modal-overlay-show");
+    }
+    )
+    </script>
+
+
 
 </body>
 </html>
