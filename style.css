@@ -148,6 +148,7 @@
   border: none;
   outline: none;
   color: #242424;
+  transition: 600ms ease-in;
 }
 
 .button:hover {
@@ -430,6 +431,7 @@
   outline: none;
   color: #242424;
   font-family: Gilroy;
+  transition: 200ms;
 }
 
 .animal-card__button:hover {
@@ -1076,6 +1078,7 @@ form input:disabled::placeholder {
     background-color: white;
     outline: none;
     color: #242424;
+    transition: 200ms;
 }
 
 .button_colorless:hover {
