@@ -1,3 +1,143 @@
+@media screen and (max-width: 1440px){
+  .page__header {
+      background-position: top left 572px;
+      padding: 0px 150px 121px 150px;
+    }
+
+    .header-image_positioned {
+      left: 641px;
+    }
+    
+    .header-image_transparent1 {
+      left: 34px;
+    }
+    
+    .header-image_transparent2 {
+      left: 32px;
+    }
+    
+    .header-image_transparent3 {
+      left: 330px;
+    }
+
+    .pets__image_rectangle {
+      width: 379px;
+    }
+    
+    .pets__image_circle {
+      left: 112px;
+    }
+    
+    .pets__image_pet1 {
+      position: absolute;
+      left: 140px;
+    }
+    
+    .pets__image_sm-circle {
+      position: absolute;
+      left: 417px;
+    }
+    
+    .pets__image_pet2 {
+      position: absolute;
+      left: 426px;
+    }
+
+    .help-description {
+      padding-right: 247px;
+    }
+    
+    .help-description__container {
+      padding-left: 727px;
+    }
+
+    .help-types {
+      width: 1440px;
+    }
+
+    .help-variants {
+      padding-left: 155px;
+      padding-right: 155px;
+     }
+
+     .options {
+      padding-left: 324px;
+    }
+
+    .animals-list {
+      padding-left: 147px;
+    }
+
+    .all-pets-link {
+      padding-left: 598px;
+    }
+
+    .social-wrapper {
+      padding-left: 341px;
+    }
+
+    .finance {
+      width: 1440px;
+    }
+
+    .separator__line {
+      width: 607px;
+    }
+
+    .support {
+      width: 1440px;
+    }
+
+    .support__link {
+      padding-left: 442px;
+    }
+
+    .volunteering {
+      padding-right: 247px;
+    }
+
+    .volunteering-wrapper {
+      padding-left: 727px;
+    }
+
+    .news {
+      width: 1440px;
+    }
+
+    .news-wrapper {
+      padding-left: 304px;
+    }
+
+    .news__link {
+      padding-left: 344px;
+    }
+
+    .footer {
+      width: 1440px;
+    }
+    
+    .footer__wrapper {
+      padding-left: 442px;
+    }
+
+    .thanks {
+      width: 1440px;
+      background-image: url("./images/36164\(1440\).png");
+    }
+
+    .outer-wrapper {
+      width: 1440px;
+    }
+    
+    .pets-header {
+      padding-left: 147px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 1366px){
     .page__header {
         background-position: top left 538px;
