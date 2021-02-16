@@ -508,6 +508,18 @@
       width: 54px;
     }
 
+    .separator__image_finance {
+      width: 47px;
+    }
+
+    .separator__image_support {
+      width: 46px;
+    }
+
+    .separator__image_car {
+      width: 44px;
+    }
+
     .separator__image_volunteering {
       width: 30px;
     }
